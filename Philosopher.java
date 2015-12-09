@@ -142,8 +142,7 @@ import java.util.Random;
             return TimeSpentThinking/TimeThinking;
         }
 
-        public int TimeSpentEating(){
-            return TimeSpentEating/TimesEaten;
+        public int TimeSpentEating(){return TimeSpentEating/TimesEaten;
         }
 
         public long TimeSpentHungry(){

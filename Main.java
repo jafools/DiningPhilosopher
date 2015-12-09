@@ -6,6 +6,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.PrintStream;
@@ -33,8 +34,10 @@ public class Main extends Application {
 
 
     public static void main(String[] args) throws InterruptedException, FileNotFoundException {
-        PrintStream stream = new PrintStream(new FileOutputStream("C:\\Users\\ajace_000\\Documents\\Linneaus Uni\\DiningPhilosophers.txt")); // THIS SEND THE CONSOLE OUTPUT TO AN EXTERNAL TEXT FILE
-        System.setOut(stream);
+        File file = new File("TraceFile.txt");
+        PrintStream printStream = new PrintStream(new FileOutputStream(file));
+        System.setOut(printStream); // THIS SEND THE CONSOLE OUTPUT TO AN EXTERNAL TEXT FILE
+
         launch(args);
 
 
