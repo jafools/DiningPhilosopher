@@ -122,7 +122,7 @@ import java.util.Random;
         }
 
         private void eat() throws InterruptedException {
-            //NeedsToEat = false;
+
             this.circle.setFill(Color.YELLOW);
 
 
