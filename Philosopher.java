@@ -33,8 +33,8 @@ import java.util.Random;
         private int TimeSpentEating = 0;
         private int TimeThinking = 0; //How long the Philosopher spent Thinking
         private int TimeSpentThinking = 0; //How many times the philosopher was thinking
-        private int bignum = 500;
-        private int threadNum =500;
+        private int bignum = 100;
+        private int threadNum = 500;
 
         private int TimesHungry = 0;
         private long TimeSpentHungry = 0;
@@ -114,7 +114,7 @@ import java.util.Random;
             this.circle.setFill(Color.BLUE);
 
             System.out.println(this + " is thinking");
-            int randomTime = random.nextInt(30) + 1 * bignum;
+            int randomTime = random.nextInt((30) + 1) * bignum;
             Thread.sleep(randomTime);
             TimeSpentThinking = randomTime + TimeThinking;
             TimeThinking++;
@@ -128,7 +128,7 @@ import java.util.Random;
 
             System.out.println(this + " is eating");
             TimesEaten++;
-            int randomTime = random.nextInt(30) +1 *bignum;
+            int randomTime = random.nextInt((30) +1) *bignum;
             Thread.sleep(randomTime);
             TimeSpentEating = randomTime + TimeSpentEating;
         }
