@@ -1,6 +1,5 @@
 package sample;
 
-import javafx.animation.AnimationTimer;
 import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -21,7 +20,7 @@ import java.util.ResourceBundle;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-public class Controller extends AnimationTimer implements Initializable{
+public class Controller implements Initializable{
     private static final int NumberOfPhilosophers = 5;  // How many to test with.
     ExecutorService executorService = null;
 
@@ -29,7 +28,7 @@ public class Controller extends AnimationTimer implements Initializable{
     public Boolean isFull = true;
     public Boolean restart = false;
 
-    public StringBuilder build = new StringBuilder();
+
 
     Circle[] circles = new Circle[NumberOfPhilosophers];
 
@@ -280,13 +279,6 @@ public class Controller extends AnimationTimer implements Initializable{
             );
         }
 
-            public void ChangeChopStickColor(Philosopher philosopher, ChopStick chopstick){
-
-
-
-
-
-    }
 
 
 
@@ -321,9 +313,5 @@ public class Controller extends AnimationTimer implements Initializable{
         AverageOuput.setItems(listItems);
     }
 
-    @Override
-    public void handle(long now) {
 
-
-    }
 }

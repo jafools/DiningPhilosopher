@@ -14,9 +14,6 @@ import java.io.PrintStream;
 public class Main extends Application {
 
 
-
-    private static final int NumberOfPhilosophers = 5;  // How many to test with.
-    private static final int MillisecondsOfSimulation = 1000 * 6;
     public static Controller controller;
     public static Scene scene;
 

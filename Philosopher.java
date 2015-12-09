@@ -106,21 +106,7 @@ import java.util.Random;
         }
 
 
-    public class Stop implements Runnable {
 
-
-        public void run(){
-                try {
-                    if (isFull){
-
-                    }
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-
-
-        }
-    }
 
     private void think() throws InterruptedException {
 
