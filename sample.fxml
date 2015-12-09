@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="747.0" prefWidth="882.0">
+         <children>
+            <Circle fx:id="Philosopher3" layoutX="189.0" layoutY="99.0" radius="28.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="Philosopher4" layoutX="296.0" layoutY="183.0" radius="28.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="Philosopher2" layoutX="84.0" layoutY="173.0" radius="28.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="Philpsopher1" layoutX="117.0" layoutY="301.0" radius="28.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="Philosopher5" layoutX="252.0" layoutY="301.0" radius="28.0" stroke="BLACK" strokeType="INSIDE" />
+           
+            <Rectangle fx:id="ChopStick1" arcHeight="5.0" arcWidth="5.0" height="68.0" layoutX="183.0" layoutY="304.0" stroke="BLACK" strokeType="INSIDE" width="6.0" />
+            <Rectangle fx:id="Chopstick2" arcHeight="5.0" arcWidth="5.0" height="68.0" layoutX="81.0" layoutY="215.0" rotate="60.0" stroke="BLACK" strokeType="INSIDE" width="6.0" />
+            <Rectangle fx:id="ChopStick3" arcHeight="5.0" arcWidth="5.0" height="68.0" layoutX="114.0" layoutY="83.0" rotate="140.2" stroke="BLACK" strokeType="INSIDE" width="6.0" />
+            <Rectangle fx:id="ChopStick4" arcHeight="5.0" arcWidth="5.0" height="68.0" layoutX="264.0" layoutY="83.0" rotate="35.0" stroke="BLACK" strokeType="INSIDE" width="6.0" />
+            <Rectangle fx:id="ChopStick5" arcHeight="5.0" arcWidth="5.0" height="68.0" layoutX="293.0" layoutY="233.0" rotate="128.7" stroke="BLACK" strokeType="INSIDE" width="6.0" />
+            <Button fx:id="StartButton" layoutX="19.0" layoutY="410.0" mnemonicParsing="false" onAction="#Start" text="Start" />
+            <Button fx:id="StopButton" layoutX="84.0" layoutY="410.0" mnemonicParsing="false" onAction="#Stop" text="Stop" />
+
+            <Label fx:id="Number1" layoutX="105.0" layoutY="338.0" text="1" />
+            <Circle fx:id="TableCirlce" fill="DODGERBLUE" layoutX="191.0" layoutY="211.0" radius="76.0" stroke="BLACK" strokeType="INSIDE" />
+            <Label fx:id="Number2" layoutX="35.0" layoutY="163.0" text="2" />
+            <Label fx:id="Number3" layoutX="187.0" layoutY="51.0" text="3" />
+            <Label fx:id="Number4" layoutX="325.0" layoutY="153.0" text="4" />
+            <Label fx:id="Number5" layoutX="263.0" layoutY="328.0" text="5" />
+            <ListView fx:id="AverageOuput" layoutX="347.0" layoutY="101.0" prefHeight="623.0" prefWidth="521.0" />
+            <Circle fx:id="ExampleCirlce1" fill="DODGERBLUE" layoutX="56.0" layoutY="508.0" radius="28.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="ExampleCirlce11" fill="#21ff34" layoutX="56.0" layoutY="585.0" radius="28.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="ExampleCirlce12" fill="#ffff61" layoutX="56.0" layoutY="667.0" radius="28.0" stroke="BLACK" strokeType="INSIDE" />
+            <Label fx:id="EatingState" layoutX="124.0" layoutY="498.0" text="Thinking State" />
+            <Label fx:id="HungryState" layoutX="124.0" layoutY="575.0" text="Hungry State" />
+            <Label fx:id="EatingState" layoutX="128.0" layoutY="657.0" text="Eating State" />
+         </children>
+      </Pane>
+   </children>
+</GridPane>
